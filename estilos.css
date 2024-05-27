@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+html{
+    background-image: url(img/fondo.png);
+}
+
+/** Header**/
+p{
+    font-family: 'Kanit';
+    color: white;
+}
+h1{
+    color: #ffff;
+    font-family: 'Kanit';
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-family: 'Kanit';
+    text-align: center;
+}
+h3{
+    font-family: 'Kanit';
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+h4{
+    font-family: 'Kanit';
+    font-size: large;
+}
+
+.div-header{
+    height: 100%;
+    background-image: url(img/fondo_header_1.png);
+    padding: 5%; 
+}
+
+.opcionesheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-left: 5%; padding-right: 5%; 
+    align-items: center;
+    gap: 45%;
+}
+
+.opcionesheader a{
+    text-decoration: none;
+}
+#nosotros:hover{
+    text-decoration: underline;
+}
+#pqelegirnos:hover{
+    text-decoration: underline;
+}
+#tusbeneficios:hover{
+    text-decoration: underline;
+}
+#contacto:hover{
+    text-decoration: underline;
+}
+
+.div-opciones{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.div-titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+}
+.div-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.boton{
+    border-radius: 20px;
+    padding: 16px 50px;
+    font-size: medium;
+    font-family: 'Titillium Web';
+    background-color: #25D441;
+    border: 0px;
+    font-weight: bold;
+    color: #ffff;
+    box-shadow: 0px 4px 40px #1c1c1c;
+}
+
+@media screen and (max-width: 321px){
+    h1{font-size: 35px !important;}
+}
+
+@media screen and (max-width: 426px){
+    .div-header{
+        background-image: url(img/fondo_header_celu.png);
+    }
+    .div-opciones{
+        display: none;
+    }
+    .opcionesheader{
+        justify-content: left;
+        margin-top: 8%;
+        padding-left: 2%;
+    }
+    #logo_gelatina{
+        width: 50px; height: 48px;
+    }
+    .div-titulos h2{
+        font-size: medium;
+        width: 90%;
+        
+    }
+    .div-titulos h1{
+        font-size: 40px;
+    }
+    .div-titulos{
+        padding-top: 22%;
+    }
+    .div-boton{
+        padding-top: 8%;
+    }
+    .boton{
+        border-radius: 30px;
+    }
+    h3{
+        font-size: 30px;
+        font-family: 'Titillium Web';
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1025px){
+    
+    .opcionesheader{
+       gap: 32%;
+    }
+    .div-opciones{
+        gap: 2.5rem;
+    }
+    
+}
+
+/** -----------MAIN--------------- **/
+
+/* qué es gelatina -----------------------------------------------------------------------------------*/
+
+.linea1{
+    display: flex;
+   justify-content: right;
+}
+
+.div-qes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%; 
+    gap: 10%;
+}
+
+@media screen and (max-width: 426px){
+    .div-qes{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 12%;
+    }
+    .div-decoracion, .linea1{
+        padding-top: 8%;
+    }
+    .decoracion{
+        width: 80%; height: 80%;
+    }
+    #linea1{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1025px){
+    .div-qes{
+        gap: 2%;
+    }
+}
+
+
+/**Que ofrecemos -----------------------------------------------------------------------------------------------**/
+
+.div-qofrecemos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;  padding-top: 3%;
+    gap: 10%;
+}
+
+.todasLasCajas{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-right: 5%; margin-left: 5%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 321px){
+    .todasLasCajas{margin-right: 70% !important;}
+    .caja{padding-top: 20%;}
+}
+
+@media screen and (max-width: 376px){
+    .todasLasCajas{margin-right: 30%;}
+}
+
+@media screen and (max-width: 426px){
+    .todasLasCajas{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .caja{
+        width: 65%;
+    }
+    .div-qofrecemos{
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .caja img{
+        width: 260; height: 300;
+    }    
+}
+
+
+
+/* Por que elegir nuestra tarjeta ---------------------------------------------------------------------------------------*/
+
+.div-pqelegirtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5%; padding-left: 5%;  padding-top: 9%;
+    gap: 10%;
+}
+.linea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 10%; padding-left: 10%; padding-top: 5%;
+    gap: 10%;
+}
+.linea2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 10%; padding-left: 10%; padding-top: 5%;
+    gap: 5%;
+}
+.item1, .item2{
+    display: flex;
+    flex-direction: row;
+}
+.item2{
+    width: 40%;
+}
+#colorpqtitulos{
+    color: #00F250;
+    font-size: 20px;
+}
+#acomodaLinea{
+    margin-left: 4%;
+}
+#acomodaLinea2{margin-left: 5%;}
+#acomodaimagen2{margin-left: 6%;}
+#acomodaresponsive2{padding-left: 3%;}
+.textoslinea{
+    padding-left: 5%; 
+}
+.div-pq p{
+    font-size: 18px;
+}
+.div-pq2 p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 376px){
+    #colorpqtitulos{font-size: 15px !important;}
+    #descuentos{
+        height: 60% !important;
+    }
+    #carrito{
+         height: 55% !important;
+    }
+    #personas{
+        height: 53% !important;
+    }
+    #manos{height: 50% !important;}
+    #acomodaresponsive2{padding-left: 2% !important;}
+}
+
+@media screen and (max-width: 376px){
+    .div-pqelegirtitulo h3{text-align: center;}
+}
+@media screen and (max-width: 426px){
+    .div-pqelegirtitulo h3{
+        font-size: 25px;
+    }
+    .div-pqelegirtitulo{
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .linea{
+        flex-direction: column;
+        padding-top: 0% !important;
+        padding-left: 10% !important;
+    }
+    .linea2{
+        flex-direction: column;
+        padding-top: 0% !important;
+        padding-left: 10% !important;
+    }
+    #descuentos{
+        height: 70%;
+    }
+    #carrito{
+         height: 65%;
+    }
+    #personas{
+        height: 63%;
+    }
+    #manos{height: 60%;}
+    #acomodalinea2 {
+        margin: 0%;
+    }
+    .item1{padding-top: 5%;}
+    .item2{width: 100%; padding-top: 0%;}
+    .textoslinea{padding-left: 0%; padding-right: 3%; align-items: center;}
+    #acomodaLinea2{margin-left: 0%; width: 27%;}
+    #acomodaresponsive{padding-right: 1%;}
+    #acomodaresponsive2{padding-left: 0%;}
+    #div-descuentos{width: 27%;}
+    #colorpqtitulos{font-size: 16px;}
+    .linea p{font-size: 15px;}
+    .linea2 p{font-size: 15px;}
+    #acomodaimagen{margin-left: 1% !important; width: 25%;}
+    #acomodaimagen2{margin-left: 1% !important; width: 25%;}
+    #acomodaresponsive4{margin-left: 1% !important;}
+    #acomodaresponsive3{margin-left: 1% !important;}
+}
+@media screen and (max-width: 1026px){
+    .linea{
+        gap: 3%;
+        padding-right: 5%; padding-left: 5%; padding-top: 8%;
+    } 
+    .linea2{
+        gap: 3%;
+        padding-right: 5%; padding-left: 5%; padding-top: 8%;
+    }
+    #acomodaLinea{
+        margin-left: 0%;
+    }
+    #acomodaresponsive{
+        padding-right: 10%;
+    }
+    #acomodaLinea2{
+        margin-left: 0%;
+    }
+    #acomodaimagen{
+        margin-left: 10%;
+    }
+    #acomodaimagen2{
+        margin-left: 0%;
+    }
+    #acomodaresponsive2{
+        margin-right: 5%;
+    }
+    #acomodaresponsive3{
+        margin-right: 8%;
+    }   
+
+}
+
+/* Algunos de tus beneficios----------------------------------------------------------------------*/
+.linea3{
+    display: flex;
+    justify-content: left;
+    padding-top: 7%;
+}
+
+#color-textos{
+    color: #01F150;
+    font-weight: bold ;
+}
+
+.div-beneficiostitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5%; padding-left: 5%;  padding-top: 5%;
+    gap: 10%;
+}
+
+.carruselImg{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    padding-right: 5%; padding-left: 5%; padding-top: 5%;
+}
+
+
+.ver-mas{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+#ver-mas{
+    font-size: 20px;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    color: #01F150;
+    opacity: 70%;
+}
+#tarjeta{
+    width: 100%; height: 100%;
+}
+.carousel{visibility: hidden; height: 0%;}
+
+@media screen and (max-width: 321px){
+    .div-beneficios{visibility: hidden; height: 0%;}
+    .carousel{padding-top: 5% !important;}
+    .carousel-image{
+        width: 90%; height: 90%;
+    }
+    .btatras{
+        width: 12%; height: 12%;
+        padding-right: 0% !important;
+    }
+    #btatras{width: 100%; height: 100%;}
+    #btseguir{width: 100%; height: 100%;}
+    
+    .btseguir{
+        width: 12%; height: 12%;
+        padding-left: 0% !important;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    .div-beneficiostitulo{text-align: center;}
+}
+@media screen and (max-width: 426px){
+    .div-beneficiostitulo{padding-top: 12%;}
+    .div-beneficios{visibility: hidden; height: 0%;}
+    .ver-mas{display: none;}
+    .carousel {
+        overflow: hidden;
+        visibility: visible;
+        position: relative;
+        top: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12%;
+        height: 60%;
+    }
+    
+    .carousel-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease-in-out;
+        transition: opacity 0.5s ease;
+    }
+ 
+    .carousel-button {
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .btatras{
+        padding-right: 7%;
+    }
+    
+    .btseguir{
+        padding-left: 7%;
+    }
+   
+    
+}
+
+
+
+/* FORMULARIO-------------------------------------------------------------------------- */
+
+.linea4{
+    display: flex;
+    justify-content: right;
+    padding-top: 7%;
+}
+
+#form-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5%; padding-left: 5%;  padding-top: 5%;
+    gap: 10%;
+}
+
+.div-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5%; margin-right: 5%; padding-top: 5%; padding-bottom: 10%;
+    gap: 80px;
+}
+
+.div-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+#nombre{
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: #28C040;
+    border-width: 5px;
+    font-family: 'Titillium Web';
+    background-color: #322137;
+    outline: none;
+    color: #ffff;
+}
+#msj{
+    width: 400px;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: #28C040;
+    border-width: 5px;
+    font-family: 'Titillium Web';
+    background-color: #322137;
+    padding-left: 20px;
+    padding-top: 20px;
+    outline: none;
+    color: #ffff;
+}
+input[type="email"]{
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: #28C040;
+    border-width: 5px;
+    font-family: 'Titillium Web';
+    color: #ffff;
+    background-color: #322137;
+    outline: none;
+}
+input[type="text"]{
+    outline: none;
+}
+input[type="submit"]{
+    outline: none;
+    padding: 8px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border-color: #28C040;
+    background-color: #28C040;
+    color: fff;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 321px){
+    .div-form{width: 100% !important;}
+    #msj{width: 18rem !important;}
+    #nombre{width: 18rem !important; border-radius: 15px;}
+    input[type="email"]{width: 18rem !important;}
+    input[type="submit"]{width: 18rem !important; }
+}
+
+@media screen and (max-width: 376px){
+    #form-titulo{text-align: center;}
+    #msj{width: 20rem; border-radius: 20px;}
+    #nombre{width: 20rem ; border-radius: 20px;}
+    input[type="email"]{width: 20rem; border-radius: 20px;}
+    input[type="submit"]{width: 20rem ; border-radius: 20px;}
+}
+
+@media screen and (max-width: 426px){
+    .linea3{display: none;}
+    .linea4{display: none;}
+    .div-form{width: 22rem;}
+    .tarjetaform{width: 70%; align-items: center; justify-content: center;}
+    .div-formulario{flex-direction: column-reverse !important; justify-content: center; align-items: center; padding-bottom: 20% !important;}
+    #tarjetaform{height: 100% !important; width: 100% !important;}
+    #nombre{
+        margin: 0%;margin-bottom: 7%; 
+        width: 22rem; 
+        border-radius: 40px;
+    }
+    #msj{
+        margin: 0%; margin-bottom: 7%; 
+        width: 22rem;
+        border-radius: 40px;
+    }
+    input[type="email"]{
+        margin: 0%; margin-bottom: 7%; 
+        width: 22rem;
+        border-radius: 40px;
+    }
+    input[type="submit"]{
+        padding: 3%;
+        width: 22rem;
+        border-radius: 100px;
+    }
+    #form-titulo{padding-top: 18%;}
+}
+@media screen and (max-width: 1025px){
+    .div-beneficios{
+        gap: 5%;
+    } 
+    #tarjetaform{
+        width: 400px; height: 300px;
+    }
+    .div-formulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 5%; margin-right: 5%; padding-top: 5%; padding-bottom: 10%;
+        gap: 50px;
+    }
+    .tarjetaform{
+        padding-top: 5%;
+    }
+   
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #17051B;
+    padding: 20px;
+    font-weight: 280;
+    align-items: center;
+}
+
+.div-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#iconos-footer{
+    width: 232px;
+    height: 38px;
+}
+
+@media screen and (max-width: 426px){
+    #logo_footer{display: none;}
+    .div-footer{flex-direction: column; text-align: center;}
+    #iconos-footer{padding-top: 10%;}
+    .texto-footer{padding-left: 5%; padding-right: 5%;}
+}
+
+/* MENU DE HAMBURGUESA--------------------------*/
+.menu-hamburguesa{display: none;}
+
+@media screen and (max-width: 426px){
+    /* Estilos para el menú hamburguesa */
+.menu-hamburguesa {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.menu-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 20; /* Asegura que el icono esté encima del menú */
+}
+
+.menu-icon {
+    padding-left: 310%;
+}
+ .close-icon {
+    padding-top: 100%;
+    position: absolute;
+    padding-left: 650%;
+}
+
+.close-icon {
+    display: none;
+}
+
+/* Estilos para el contenido del menú */
+.menu-content {
+    display: none;
+    position: absolute;
+    top: -70;
+    left: -195;
+    width: 100vw;
+    height: 103vh; /* 1/4 del alto de la pantalla */
+    background-color: #240A29; /* Fondo oscuro semitransparente */
+    text-align: left;
+    padding-top: 20px;
+
+}
+
+.menu-content ul {
+    list-style-type: none;
+    padding-top: 30%;
+    margin: 0;
+    text-decoration: none;
+}
+
+.menu-content li a{
+    margin: 15px 0;
+    color: white !important;
+    display: block;
+        font-size: 25px;
+        padding-bottom: 10%; padding-left: 20%;
+        font-family: 'Kanit';
+        font-weight: 600; 
+        text-decoration: none;   
+}
+
+/* Mostrar el contenido del menú cuando el checkbox está marcado */
+#menu:checked ~ .menu-label .menu-icon {
+    display: none;
+}
+
+#menu:checked ~ .menu-label .close-icon {
+    display: block;
+}
+
+#menu:checked ~ .menu-content {
+    display: block;
+}
+
+input[type="checkbox"]{opacity: 0%;}
+    
+}
+
+@media screen and (max-width: 321px){
+    .menu-icon {
+        padding-left: 180% !important;
+    }
+    .close-icon {
+        padding-left: 380% !important;
+    }
+    .menu-content{width: 112vw !important;}
+}
+
+@media screen and (max-width: 376px){
+    .menu-icon {
+        padding-left: 250%;
+    }
+    .menu-content{width: 105vw;}
+    .close-icon{padding-left: 550%;}
+}
+
+/*--------------------------------------------------------------------------------------FEEDBACK-----------------------------------------------------------------------*/
+
+
+.div-feedback1{
+    background-color: #27082D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.texto-feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12%; padding-bottom: 25%;
+    text-align: left;
+}
+.texto{ padding-left: 14%; padding-right: 14%;}
+.nombre{ padding-left: 8%; padding-right: 8%;}
+.texto-feedback p{font-size: 20px;}
+#nombreCorreo{font-weight: 600;}
+.flecha{padding-left: 8%; padding-top: 8%;}
+.feedback-derecha{
+    background-image: url(img/feedback_derecha.svg);
+    width: 50%;
+}
+.logo_izquierda{padding-left: 10%;}
+
+.footerFeedback{
+    background-color: #17051B;
+    padding: 10px;
+    font-weight: 280;
+    align-items: center;
+}
+
+#iconos-footerFeedback{
+    width: 200px;
+    height: 33px;
+}
+
+#logo_footerFeedback{width: 50px;}
+.btregresarFeedback{display: none;}
+#iconosFooter_FeedbackResponsive{display: none;}
+
+@media screen and (max-width: 1025px){
+    .texto-feedback{padding-top: 18%; padding-bottom: 32%;}
+    .texto{ padding-left: 12%; padding-right: 12%;}
+    .logo_izquierda{padding-left: 6%;}
+}
+@media screen and (max-width: 426px){
+    .div-feedback1{
+        flex-direction: column; background-image: url(img/fondoFeedback_responsive.svg);
+    }
+    .feedback-derecha{width: 100%; background: none;}
+    #logo_izquierda{width: 100%; height: 100%;}
+    .logo_izquierda{width: 50%; height: 50%; padding-left: 0%;}
+    .texto-feedback{padding-bottom: 10% !important; padding-top: 20% !important; text-align: center;}
+    .texto-feedback p{font-size: 18px;}
+    .flecha{display: none;}
+    .div-feedback1{justify-content: center;}
+    #regresarFeedback{width: 100%; color: white; padding: 5%;}
+    .btregresarFeedback{
+        display: flex; width: 45%; padding-top: 10%; padding-bottom: 20%;
+    }
+    h1{font-size: 40px !important;}
+    .footerFeedback{padding-top: 5%; padding-left: 10%; padding-right: 10%;}
+    #logo_footerFeedback{display: none;} #iconos-footerFeedback{display: none;}
+    #iconosFooter_FeedbackResponsive{display: flex; padding-top: 5%;}
+}
+@media screen and (max-width: 376px){
+    .texto-feedback p{font-size: 16px;}
+}
+
